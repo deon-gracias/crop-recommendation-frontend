@@ -97,6 +97,7 @@
   border-radius: 3px;
   outline: none;
   border: 1px solid #dcdcdc;
+  transition: 300ms;
 }
 
 .field[type="number"]::-webkit-inner-spin-button,
