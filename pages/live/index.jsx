@@ -130,7 +130,7 @@ const Live = () => {
           <>Loading</>
         )}
         <h2 className={styles.recommended}>
-          <Link href={`http://localhost:3000/crops/${recommended}`}>
+          <Link href={`/crops/${recommended}`}>
             {recommended.replace(/^\w/, (c) => c.toUpperCase())}
           </Link>
         </h2>

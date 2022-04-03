@@ -48,7 +48,7 @@ const Home = () => {
         recommended = res.data.recommended[0];
       });
 
-    Router.push(`http://localhost:3000/crops/${recommended}`);
+    Router.push(`/crops/${recommended}`);
 
     setLoading(false);
   };

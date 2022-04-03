@@ -24,7 +24,7 @@ const Crops = () => {
             {crops.map((crop) => (
               <Link
                 key={crop.crop}
-                href={`http://localhost:3000/crops/${crop.crop}`}
+                href={`/crops/${crop.crop}`}
               >
                 <div className={styles.card}>
                   <p className={styles.title}>
