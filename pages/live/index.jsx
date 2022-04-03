@@ -84,6 +84,7 @@ const Live = () => {
   };
 
   useEffect(() => {
+    setTimeout(1000);
     getRecommended();
   }, [values]);
 
