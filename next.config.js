@@ -5,8 +5,9 @@ const nextConfig = {
     domains: ["images.pexels.com", "img2.exportersindia.com", "i0.wp.com"],
   },
   env: {
-    api: 'http://localhost:5000'
-  }
+    // api: "http://localhost:5000"
+    api: "https://crop-rec-api.herokuapp.com/",
+  },
 };
 
 module.exports = nextConfig;
