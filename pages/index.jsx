@@ -41,7 +41,7 @@ const Home = () => {
     let recommended;
 
     await axios
-      .post("http://localhost:5000/recommend", {
+      .post(`${process.env.api}/recommend`, {
         ...inputValues,
       })
       .then((res) => {

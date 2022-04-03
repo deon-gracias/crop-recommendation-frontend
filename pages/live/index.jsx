@@ -73,7 +73,7 @@ const Live = () => {
 
   const getRecommended = async () => {
     await axios
-      .post("http://localhost:5000/recommend", {
+      .post(`${process.env.api}/recommend`, {
         ...values,
       })
       .then((res) => {

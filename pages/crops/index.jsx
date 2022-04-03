@@ -8,7 +8,7 @@ const Crops = () => {
   const [crops, setCrops] = useState();
 
   useEffect(() => {
-    axios.get(`http://localhost:5000/crops`).then((response) => {
+    axios.get(`${process.env.api}/crops`).then((response) => {
       setCrops(response.data.crops);
     });
   }, []);

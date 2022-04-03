@@ -15,7 +15,7 @@ const Crop = () => {
 
   useEffect(() => {
     name &&
-      axios.get(`http://localhost:5000/crops?name=${name}`).then((response) => {
+      axios.get(`${process.env.api}/crops?name=${name}`).then((response) => {
         setCrop(response.data.crop);
       });
   }, [name]);

@@ -4,6 +4,9 @@ const nextConfig = {
   images: {
     domains: ["images.pexels.com", "img2.exportersindia.com", "i0.wp.com"],
   },
+  env: {
+    api: 'http://localhost:5000'
+  }
 };
 
 module.exports = nextConfig;
