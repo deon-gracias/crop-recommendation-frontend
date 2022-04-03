@@ -179,10 +179,10 @@ const Home = () => {
         </div>
       </main>
       <div className={styles.tipContainer}>
-        <Link href="http://localhost:3000/crops">
+        <Link href="/crops">
           <div className={styles.allCropsBtn}>Crops</div>
         </Link>
-        <Link href="http://localhost:3000/live">
+        <Link href="/live">
           <div className={styles.allCropsBtn}>Live</div>
         </Link>
       </div>
