@@ -84,8 +84,8 @@ const Live = () => {
   };
 
   useEffect(() => {
-    setTimeout(1000);
-    getRecommended();
+    const timer = setTimeout(() => getRecommended(), 1000);
+    return () => clearTimeout(timer);
   }, [values]);
 
   return (
