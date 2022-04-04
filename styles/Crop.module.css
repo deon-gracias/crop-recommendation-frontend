@@ -67,7 +67,6 @@
   display: grid;
   place-items: center;
   grid-template-rows: 0.5fr 1fr;
-  gap: 1.5rem;
 }
 
 .card {
@@ -94,6 +93,14 @@
 }
 
 @media (max-width: 600px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+
   .grid {
     width: 100%;
     flex-direction: column;
