@@ -25,6 +25,7 @@ const Crops = () => {
               <Link
                 key={crop.crop}
                 href={`/crops/${crop.crop}`}
+              passHref
               >
                 <div className={styles.card}>
                   <p className={styles.title}>
