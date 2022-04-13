@@ -20,6 +20,7 @@ import {
   Box,
   Group,
   Modal,
+  Avatar,
 } from "@mantine/core";
 import { Api, Logout } from "tabler-icons-react";
 import axios from "axios";
@@ -137,6 +138,7 @@ const Dashboard = () => {
             >
               Sign Out
             </Button>
+            <Avatar src={user.photoURL} radius="xl"></Avatar>
           </Group>
         </Group>
         <Text size="lg" mb="sm" color="gray" order={4}>
