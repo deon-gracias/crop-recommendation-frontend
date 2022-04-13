@@ -7,7 +7,6 @@ import {
   Paper,
   Button,
   Box,
-  Loader,
   PasswordInput,
   TextInput,
   Group,
@@ -16,6 +15,7 @@ import {
 import { useForm } from "@mantine/form";
 import { BrandGoogle } from "tabler-icons-react";
 import Head from "next/head";
+import LoadingIcon from "../components/LoadingIcon";
 
 export default function GoogleSignIn() {
   const router = useRouter();
@@ -49,16 +49,14 @@ export default function GoogleSignIn() {
         height: "100vh",
       }}
     >
-      <Container
-        sx={{ height: "100%", display: "grid", placeItems: "center" }}
-      >
+      <Container sx={{ height: "100%", display: "grid", placeItems: "center" }}>
         <Head>
           <title>Login</title>
         </Head>
         {loading ? (
-          <Loader />
+          <LoadingIcon />
         ) : user ? (
-          <Loader />
+          <LoadingIcon />
         ) : (
           <Box>
             <Title align="center" mb={20}>
