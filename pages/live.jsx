@@ -3,8 +3,8 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
-import styles from "../../styles/Live.module.css";
-import cropImgs from "../../public/assets/crop_image.json";
+import styles from "../styles/Live.module.css";
+import cropImgs from "../public/assets/crop_image.json";
 import { useRouter } from "next/router";
 import { parse } from "path";
 

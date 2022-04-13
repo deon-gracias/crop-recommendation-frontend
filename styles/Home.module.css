@@ -139,7 +139,7 @@
   margin: 1rem;
 }
 
-.allCropsBtn {
+.tipBtn {
   cursor: pointer;
   padding: 1rem 1.5rem;
   background-color: #40a65b;
@@ -148,7 +148,7 @@
   transition: 300ms;
 }
 
-.allCropsBtn:hover {
+.tipBtn:hover {
   background-color: #00ce6e;
   color: #002c00;
 }
@@ -184,7 +184,7 @@
     font-size: 0.85rem;
   }
 
-  .allCropsBtn {
+  .tipBtn {
     font-size: 0.75rem;
     padding: 0.75rem 0.85rem;
   }

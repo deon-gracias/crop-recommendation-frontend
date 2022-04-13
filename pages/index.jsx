@@ -180,10 +180,10 @@ const Home = () => {
       </main>
       <div className={styles.tipContainer}>
         <Link href="/crops">
-          <div className={styles.allCropsBtn}>Crops</div>
+          <div className={styles.tipBtn}>Crops</div>
         </Link>
         <Link href="/live">
-          <div className={styles.allCropsBtn}>Live</div>
+          <div className={styles.tipBtn}>Live</div>
         </Link>
       </div>
     </div>

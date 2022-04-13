@@ -1,0 +1,142 @@
+[
+  {
+    "state": "Andaman and Nicobar Islands",
+    "rainfall": "2,967"
+  },
+  {
+    "state": "Arunachal Pradesh",
+    "rainfall": "2,782"
+  },
+  {
+    "state": "Assam and Meghalaya",
+    "rainfall": "2,818"
+  },
+  {
+    "state": "Nagaland, Manipur, Mizoram and Tripura",
+    "rainfall": "1,881"
+  },
+  {
+    "state": "Gangetic West Bengal",
+    "rainfall": "1,439"
+  },
+  {
+    "state": "Sub-Himalayan West Bengal and Sikkim",
+    "rainfall": "2,739"
+  },
+  {
+    "state": "Orissa",
+    "rainfall": "1,489"
+  },
+  {
+    "state": "Bihar Plateau",
+    "rainfall": "1,326"
+  },
+  {
+    "state": "Bihar Plains",
+    "rainfall": "1,186"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "rainfall": "1,025"
+  },
+  {
+    "state": "Plain of West Uttar Pradesh",
+    "rainfall": 896
+  },
+  {
+    "state": "Hills of West Uttar Pradesh",
+    "rainfall": "1,667"
+  },
+  {
+    "state": "Haryana, Chandigarh and Delhi",
+    "rainfall": 617
+  },
+  {
+    "state": "Punjab",
+    "rainfall": 649
+  },
+  {
+    "state": "Himachal Pradesh",
+    "rainfall": "1,251"
+  },
+  {
+    "state": "Jammu and Kashmir",
+    "rainfall": "1,011"
+  },
+  {
+    "state": "West Rajasthan",
+    "rainfall": 313
+  },
+  {
+    "state": "East Rajasthan",
+    "rainfall": 675
+  },
+  {
+    "state": "Madhya Pradesh",
+    "rainfall": "1,017"
+  },
+  {
+    "state": "East Madhya Pradesh",
+    "rainfall": "1,338"
+  },
+  {
+    "state": "Gujarat region",
+    "rainfall": "1,107"
+  },
+  {
+    "state": "Saurashtra and Kachchh",
+    "rainfall": 578
+  },
+  {
+    "state": "Goa",
+    "rainfall": "3,005"
+  },
+  {
+    "state": "Madhya Maharashtra",
+    "rainfall": 901
+  },
+  {
+    "state": "Marathwada",
+    "rainfall": 882
+  },
+  {
+    "state": "Vidarbha",
+    "rainfall": "1,034"
+  },
+  {
+    "state": "Coastal Andhra Pradesh",
+    "rainfall": "1,094"
+  },
+  {
+    "state": "Telengana",
+    "rainfall": 961
+  },
+  {
+    "state": "Rayalaseema",
+    "rainfall": 680
+  },
+  {
+    "state": "Tamil Nadu and Pondicherry",
+    "rainfall": 998
+  },
+  {
+    "state": "Coastal Karnataka",
+    "rainfall": "3,456"
+  },
+  {
+    "state": "North Interior Karnataka",
+    "rainfall": 731
+  },
+  {
+    "state": "South Interior Karnataka",
+    "rainfall": "1,126"
+  },
+  {
+    "state": "Kerala",
+    "rainfall": "3,055"
+  },
+  {
+    "state": "Lakshadweep",
+    "rainfall": "1,515"
+  }
+]
