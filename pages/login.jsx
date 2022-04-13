@@ -43,53 +43,62 @@ export default function GoogleSignIn() {
   user && router.push("/dashboard");
 
   return (
-    <Container sx={{ height: "100vh", display: "grid", placeItems: "center" }}>
-      <Head>
-        <title>Login</title>
-      </Head>
-      {loading ? (
-        <Loader />
-      ) : user ? (
-        <Loader />
-      ) : (
-        <Box>
-          <Title align="center" mb={20}>
-            Login
-          </Title>
-          <Paper sx={{ minWidth: 500 }} shadow="lg" p="xl">
-            <form onSubmit={form.onSubmit((values) => console.log(values))}>
-              <TextInput
-                required
-                mt="sm"
-                label="Email"
-                placeholder="your@email.com"
-                {...form.getInputProps("email")}
-              />
-              <PasswordInput
-                required
-                mt="sm"
-                label="Password"
-                placeholder="Password"
-                {...form.getInputProps("password")}
-              />
-              <Group position="center" mt={35}>
-                <Button type="submit" fullWidth>
-                  Login
-                </Button>
+    <Box
+      sx={{
+        backgroundColor: "#fff8dd",
+        height: "100vh",
+      }}
+    >
+      <Container
+        sx={{ height: "100%", display: "grid", placeItems: "center" }}
+      >
+        <Head>
+          <title>Login</title>
+        </Head>
+        {loading ? (
+          <Loader />
+        ) : user ? (
+          <Loader />
+        ) : (
+          <Box>
+            <Title align="center" mb={20}>
+              Login
+            </Title>
+            <Paper sx={{ minWidth: 500 }} shadow="lg" p="xl">
+              <form onSubmit={form.onSubmit((values) => console.log(values))}>
+                <TextInput
+                  required
+                  mt="sm"
+                  label="Email"
+                  placeholder="your@email.com"
+                  {...form.getInputProps("email")}
+                />
+                <PasswordInput
+                  required
+                  mt="sm"
+                  label="Password"
+                  placeholder="Password"
+                  {...form.getInputProps("password")}
+                />
+                <Group position="center" mt={35}>
+                  <Button type="submit" fullWidth>
+                    Login
+                  </Button>
 
-                <Button
-                  leftIcon={<BrandGoogle />}
-                  color="red"
-                  onClick={handleLogin}
-                  fullWidth
-                >
-                  Sign in with Google
-                </Button>
-              </Group>
-            </form>
-          </Paper>
-        </Box>
-      )}
-    </Container>
+                  <Button
+                    leftIcon={<BrandGoogle />}
+                    color="red"
+                    onClick={handleLogin}
+                    fullWidth
+                  >
+                    Sign in with Google
+                  </Button>
+                </Group>
+              </form>
+            </Paper>
+          </Box>
+        )}
+      </Container>
+    </Box>
   );
 }
