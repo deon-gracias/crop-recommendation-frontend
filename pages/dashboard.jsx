@@ -34,15 +34,23 @@ const Dashboard = () => {
   const [rainfall, setRainfall] = useState(avgRainfall[0]["rainfall"]);
   const [indianState, setIndianState] = useState(avgRainfall[0]["state"]);
   const [sensorData, setSensorData] = useState({
-    N: "N/A",
-    P: "N/A",
-    K: "N/A",
-    temperature: "N/A",
-    humidity: "N/A",
-    ph: "N/A",
-    moisture: "N/A",
+    // N: "N/A",
+    // P: "N/A",
+    // K: "N/A",
+    // temperature: "N/A",
+    // humidity: "N/A",
+    // ph: "N/A",
+    // moisture: "N/A",
+    N: 45,
+    P: 50,
+    K: 21,
+    temperature: 40,
+    humidity: 102,
+    ph: 5,
+    rainfall: 130,
+    moisture: 90,
   });
-  const [recommended, setRecommended] = useState("rice");
+  const [recommended, setRecommended] = useState("");
   const [apiModalOpen, setApiModalOpen] = useState(false);
 
   !user && router.push("/login");
@@ -80,20 +88,27 @@ const Dashboard = () => {
             temperature: feeds[0].field1,
             humidity: feeds[0].field2,
             ph: Math.floor(Math.random() * 10),
-            moisture: feeds[0].field5,
             rainfall: parseInt(rainfall.replace(",", "")),
+            moisture: feeds[0].field5,
           });
-
-          axios
-            .post(`${process.env.api}/recommend`, {
-              ...sensorData,
-            })
-            .then((res) => {
-              const data = res.data;
-              if (data.error) console.log("Recommend Crop Error", data.error);
-              else setRecommended(data.recommended[0]);
-            });
         }
+
+        axios
+          .post(`${process.env.api}/recommend`, {
+            N: sensorData.N,
+            P: sensorData.P,
+            K: sensorData.K,
+            temperature: sensorData.temperature,
+            humidity: sensorData.humidity,
+            ph: sensorData.ph,
+            rainfall: sensorData.rainfall,
+          })
+          .then((res) => {
+            const data = res.data;
+
+            if (data.error) console.log("Recommend Crop Error", data.error);
+            else setRecommended(data.recommended[0]);
+          });
       })
       .catch((e) => console.log("Sensore Data Error", e));
   }
