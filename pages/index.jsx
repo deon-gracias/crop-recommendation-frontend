@@ -6,6 +6,7 @@ import { useState } from "react";
 import axios from "axios";
 import styles from "../styles/Home.module.css";
 import fields512 from "../public/fields-512x512.png";
+import { AccessPoint, Growth, Login } from "tabler-icons-react";
 
 const Home = () => {
   const [inputValues, setInputValues] = useState({
@@ -180,10 +181,19 @@ const Home = () => {
       </main>
       <div className={styles.tipContainer}>
         <Link href="/crops">
-          <div className={styles.tipBtn}>Crops</div>
+          <div className={styles.tipBtn}>
+            <Growth /> Crops
+          </div>
         </Link>
         <Link href="/live">
-          <div className={styles.tipBtn}>Live</div>
+          <div className={styles.tipBtn}>
+            <AccessPoint /> Live
+          </div>
+        </Link>
+        <Link href="/login">
+          <div className={styles.tipBtn}>
+            <Login /> Login
+          </div>
         </Link>
       </div>
     </div>
