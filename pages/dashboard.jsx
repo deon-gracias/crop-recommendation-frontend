@@ -47,7 +47,6 @@ const Dashboard = () => {
     temperature: 40,
     humidity: 102,
     ph: 5,
-    rainfall: 130,
     moisture: 90,
   });
   const [recommended, setRecommended] = useState("");
@@ -93,6 +92,16 @@ const Dashboard = () => {
           });
         }
 
+        console.log("Data Sent to ML",{
+          N: sensorData.N,
+          P: sensorData.P,
+          K: sensorData.K,
+          temperature: sensorData.temperature,
+          humidity: sensorData.humidity,
+          ph: sensorData.ph,
+          rainfall: parseInt(rainfall.replace(",", "")),
+        });
+
         axios
           .post(`${process.env.api}/recommend`, {
             N: sensorData.N,
@@ -101,10 +110,11 @@ const Dashboard = () => {
             temperature: sensorData.temperature,
             humidity: sensorData.humidity,
             ph: sensorData.ph,
-            rainfall: sensorData.rainfall,
+            rainfall: parseInt(rainfall.replace(",", "")),
           })
           .then((res) => {
             const data = res.data;
+            console.log("ML Server", data);
 
             if (data.error) console.log("Recommend Crop Error", data.error);
             else setRecommended(data.recommended[0]);
