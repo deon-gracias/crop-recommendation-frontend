@@ -41,7 +41,7 @@
   },
   {
     "state": "Plain of West Uttar Pradesh",
-    "rainfall": 896
+    "rainfall": "896"
   },
   {
     "state": "Hills of West Uttar Pradesh",
@@ -49,11 +49,11 @@
   },
   {
     "state": "Haryana, Chandigarh and Delhi",
-    "rainfall": 617
+    "rainfall": "617"
   },
   {
     "state": "Punjab",
-    "rainfall": 649
+    "rainfall": "649"
   },
   {
     "state": "Himachal Pradesh",
@@ -65,11 +65,11 @@
   },
   {
     "state": "West Rajasthan",
-    "rainfall": 313
+    "rainfall": "313"
   },
   {
     "state": "East Rajasthan",
-    "rainfall": 675
+    "rainfall": "675"
   },
   {
     "state": "Madhya Pradesh",
@@ -85,7 +85,7 @@
   },
   {
     "state": "Saurashtra and Kachchh",
-    "rainfall": 578
+    "rainfall": "578"
   },
   {
     "state": "Goa",
@@ -93,11 +93,11 @@
   },
   {
     "state": "Madhya Maharashtra",
-    "rainfall": 901
+    "rainfall": "901"
   },
   {
     "state": "Marathwada",
-    "rainfall": 882
+    "rainfall": "882"
   },
   {
     "state": "Vidarbha",
@@ -109,15 +109,15 @@
   },
   {
     "state": "Telengana",
-    "rainfall": 961
+    "rainfall": "961"
   },
   {
     "state": "Rayalaseema",
-    "rainfall": 680
+    "rainfall": "680"
   },
   {
     "state": "Tamil Nadu and Pondicherry",
-    "rainfall": 998
+    "rainfall": "998"
   },
   {
     "state": "Coastal Karnataka",
@@ -125,7 +125,7 @@
   },
   {
     "state": "North Interior Karnataka",
-    "rainfall": 731
+    "rainfall": "731"
   },
   {
     "state": "South Interior Karnataka",
