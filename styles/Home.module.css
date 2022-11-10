@@ -134,9 +134,16 @@
   position: fixed;
   bottom: 0;
   right: 0;
+
   display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+
   gap: 0.5rem;
-  margin: 1rem;
+
+  padding: 1rem;
+
+  width: 100%;
 }
 
 .tipBtn {
