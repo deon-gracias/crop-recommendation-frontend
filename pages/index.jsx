@@ -179,7 +179,7 @@ const Home = () => {
         </div>
       </main>
       <div className={styles.tipContainer}>
-        <Link href="/sensors" passHref>
+        <Link href="/sensor" passHref>
           <div className={styles.tipBtn}>
             <AccessPoint /> Sensor
           </div>
