@@ -14,9 +14,9 @@ export default function Sensor() {
   function getSensorData() {
     axios
       .get("https://agri-iot-sensor-api-production.up.railway.app/sensors")
-      .then((data) => {
-        console.log(data.data.data);
-        setSensorData(data.data.data);
+      .then((res) => {
+        console.log(res.data.data);
+        setSensorData(res.data.data);
       });
   }
 
