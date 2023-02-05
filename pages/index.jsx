@@ -39,17 +39,19 @@ const Home = () => {
     e.preventDefault();
     setLoading(true);
 
-    let recommended;
-
     await axios
       .post(`${process.env.api}/recommend`, {
         ...inputValues,
       })
       .then((res) => {
-        recommended = res.data.recommended[0];
+        if (res.data.error) {
+          console.log("Error : ", res.data.error);
+          return;
+        }
+        const recommended = res.data.recommended[0];
+        console.log(res.data);
+        Router.push(`/crops/${recommended}`);
       });
-
-    Router.push(`/crops/${recommended}`);
 
     setLoading(false);
   };
