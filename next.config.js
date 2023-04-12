@@ -5,8 +5,8 @@ const nextConfig = {
     domains: ["images.pexels.com", "img2.exportersindia.com", "i0.wp.com"],
   },
   env: {
-    api: "http://localhost:5000",
-    // api: "https://crop-recommendation-backend-production.up.railway.app",
+    // api: "http://localhost:5000",
+    api: "https://crop-recommendation-backend-production.up.railway.app",
     thingSpeakApiKey: "XGLNVX6GKROUI3B1",
     fireaseApiKey: "AIzaSyAmzOw7_1wuFfBSd54zzM_78NacCVdKT48",
     fireaseAuthDomain: "agi-iot-beae7.firebaseapp.com",
