@@ -6,7 +6,7 @@ const nextConfig = {
   },
   env: {
     // api: "http://localhost:5000",
-    api: "https://crop-recommendation-backend-production.up.railway.app",
+    api: "http://web-production-e043.up.railway.app",
     thingSpeakApiKey: "XGLNVX6GKROUI3B1",
     fireaseApiKey: "AIzaSyAmzOw7_1wuFfBSd54zzM_78NacCVdKT48",
     fireaseAuthDomain: "agi-iot-beae7.firebaseapp.com",
