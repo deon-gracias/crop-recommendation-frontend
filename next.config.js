@@ -7,7 +7,7 @@ const nextConfig = {
   env: {
     // api: "http://localhost:5000",
     // api: "http://web-production-e043.up.railway.app",
-    api: "http://web-production-1c4a.up.railway.app",
+    api: "http://web-production-4fd4.up.railway.app",
     thingSpeakApiKey: "XGLNVX6GKROUI3B1",
     fireaseApiKey: "AIzaSyAmzOw7_1wuFfBSd54zzM_78NacCVdKT48",
     fireaseAuthDomain: "agi-iot-beae7.firebaseapp.com",
