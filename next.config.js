@@ -8,7 +8,7 @@ const nextConfig = {
     iot_api_url: "https://agri-iot-sensor-api.onrender.com",
     // api: "http://localhost:5000",
     // api: "https://crop-recommendation-backend.onrender.com",
-    api: "http://zraeon.pythonanywhere.com/",
+    api: "http://zraeon.pythonanywhere.com",
     thingSpeakApiKey: "XGLNVX6GKROUI3B1",
     fireaseApiKey: "AIzaSyAmzOw7_1wuFfBSd54zzM_78NacCVdKT48",
     fireaseAuthDomain: "agi-iot-beae7.firebaseapp.com",
