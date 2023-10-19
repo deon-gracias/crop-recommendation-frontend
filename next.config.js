@@ -19,7 +19,7 @@ const nextConfig = {
     domains: ["images.pexels.com", "img2.exportersindia.com", "i0.wp.com"],
   },
   env: {
-    iot_api_url: "https://agri-iot-sensor-api-production.up.railway.app",
+    iot_api_url: "https://agri-iot-sensor-api.onrender.com",
     // api: "http://localhost:5000",
     // api: "https://crop-recommendation-backend.onrender.com",
     api: "https://f7f3-103-177-129-222.ngrok.io",
